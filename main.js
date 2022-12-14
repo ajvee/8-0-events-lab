@@ -20,8 +20,20 @@ const palette = document.querySelectorAll("#palette .color")
 // we are going to manipulate all the cells 
 const cell = document.querySelectorAll(".cell")
 
+// iterating through our color node list, 
 color.forEach((newColor) => {
+  // adding 'click' event to the colors
   newColor.addEventListener('click',(event) => {
+    // setting the current color element background to the ones that are being clicked 
     currentColor.style.backgroundColor = event.target.style.backgroundColor
+  })
+})
+
+// iterating through the cell class elements
+cell.forEach((cells) => {
+  // w our new element, add the click event to the cells 
+  cells.addEventListener('click', () => {
+    // setting the cells to the color chosen 
+    cells.style.backgroundColor = currentColor.style.backgroundColor
   })
 })

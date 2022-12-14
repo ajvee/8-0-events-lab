@@ -7,3 +7,9 @@ for (let i = 0; i < 100; i++) {
 }
 
 // You may write your code here!
+
+const currentColor = document.querySelector("#current-color")
+
+const color = document.querySelectorAll(".color")
+
+const palette = document.querySelectorAll("#palette .color")
